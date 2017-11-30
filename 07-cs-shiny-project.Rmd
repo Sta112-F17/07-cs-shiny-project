@@ -1,0 +1,35 @@
+---
+title: "A Shiny app for your project"
+author: "Team Name"
+date: "November 30, 2017"
+output: 
+  html_document: 
+    fig_height: 4
+    highlight: pygments
+    keep_md: yes
+    theme: sandstone
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setup
+
+### Load packages
+
+```{r load-packages, message=FALSE, warning=FALSE}
+library(shiny)
+library(tidyverse)
+```
+
+### Load data
+
+## Shiny app
+
+Add your shiny app below in a code chunk. In the `shinyApp()` function at the end of the app code,
+specify a `height` option that is large enough for your app, e.g.
+
+```
+shinyApp(ui = ui, server = server, options = list(height = 500))
+```
